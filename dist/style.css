@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.form-container {
+  width: 350px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 110px 3px 0 0;
+  transform: translateX(1.5%);
+  border: none;
+  outline: focus;
+  background: linear-gradient(to right bottom, #9fbfda, #b4c0c2);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.text-sign {
+  text-align: center;
+  transform: translateY(-60px);
+  font-weight: 700;
+  z-index: 2;
+}
+
+label {
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  transform: translateY(-5%);
+  margin: 0 0 2px 15px;
+  z-index: 2;
+}
+
+input {
+  height: 40px;
+  width: 297px;
+  margin: 16px;
+  padding: 3px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.eye {
+  z-index: 5;
+  position: absolute;
+  right: 35px;
+  top: 74%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.button {
+  width: 90px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 2;
+  transform: translateX(130%);
+  margin: 5% 0 0 0;
+  cursor: pointer;
+}
+
+.login-redirect {
+  position: absolute;
+  margin: 3% 0 0 13%;
+  text-decoration: none;
+}
+
+/* jika berada diukuran layar minimal 650px */
+@media (min-width: 650px) {
+  .form-container {
+    width: 500px;
+    height: 500px;
+    margin: 0 0 0 25%;
+    transform: translateY(115%);
+  }
+  
+  .eye {
+    right: 110px;
+    top: 74%;
+    transform: translateY(-50%);
+  }
+  
+  .login-redirect {
+    position: absolute;
+    margin: 60% 0 0 35%;
+    z-index: 2;
+  }
+}
