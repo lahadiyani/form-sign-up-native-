@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="dist/style.css" type="text/css" media="all" />
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="form-container">
+    <h3 class="text-sign">Sign Up</h3>
+  <form id="form" action="/signup" method="post" accept-charset="utf-8">
+    <label for="Name">Name:</label>
+    <input type="text" name="text" id="text" placeholder="Masukkan Name.." />
+    <br />
+    <label for="Username">Username:</label>
+    <input type="text" name="username" id="username" placeholder="Masukkan Username.." />
+    <br />
+    <label for="Email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Masukkan Email.." />
+    <br />
+    <label for="Password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="Masukkan Password.." />
+    <ion-icon name="eye-outline" id="eye" class="eye" onclick="passVisibility()"></ion-icon>
+    <br />
+    <button id="button-signup" class="button" type="button">Sign Up</button>
+  </form>
+  </div>
+  <a class="login-redirect" href="#">If you don't have an account, click me</a>
+  
+  <script defer src="dist/index.js" type="text/javascript" charset="utf-8"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>
